@@ -9,6 +9,16 @@
 .landing {
   display: grid;
   background: red;
-  grid-template-rows: 220px 5fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.landing nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 1 / span 3;
+}
+
+.landing article {
+  height: 200px;
+  background: rgba(0, 0, 200, 0.5);
+  grid-row-start: 2;
 }
