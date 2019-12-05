@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 .landing {
@@ -23,21 +24,43 @@
       "a1 a1 a1 a2 a2 a2"
       "a3 a3 a3 . . .";
   }
-}
 
-@media only screen and (max-width: 790px) {
-  .landing {
-    grid-template-areas:
-      "H H H H H H"
-      "a1 a1 a1 a1 a1 a1"
-      "a2 a2 a2 a2 a2 a2"
-      "a3 a3 a3 a3 a3 a3";
+  .lastest {
+    grid-template-areas: 
+      "a1 a1 a1 a1 a2 a2 a2 a2 a3 a3 a3 a3"
+      "f1 f1 f1 f1 f1 f1 f1 f1 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a6 a6 a6 a6 a7 a7 a7 a7"
+      "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
   }
 }
 
 .landing nav {
   background-color: rgba(0, 0, 0, 0.5);
   grid-area: H;
+}
+
+.landing nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.landing nav ul li {
+  width: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.landing nav ul li.menu {
+  height: 80%;
+}
+
+.landing nav ul li:not(.menu) {
+  height: 20%;
 }
 
 .landing article {
@@ -48,14 +71,92 @@
   height: 500px;
 }
 
-#one {
+.one {
   grid-area: a1;
 }
 
-#two {
+.two {
   grid-area: a2;
 }
 
-#three {
+.three {
   grid-area: a3;
+}
+
+.four {
+  grid-area: a4;
+}
+
+.five {
+  grid-area: a5;
+}
+
+.six {
+  grid-area: a6;
+}
+
+.seven {
+  grid-area: a7;
+}
+
+.fone {
+  grid-area: f1;
+}
+
+.ftwo {
+  grid-area: f2;
+}
+
+.lastest {
+  display: grid;
+  grid-auto-rows: 600px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 
+    "a1 a1 a1 a2 a2 a2 a3 a3 a3 .  .  ."
+    "f1 f1 f1 f1 f1 f1 a4 a4 a4 a5 a5 a5"
+    "a6 a6 a6 a7 a7 a7 f2 f2 f2 f2 f2 f2";
+}
+
+.lastest article {
+  background-color: #999;
+}
+
+.lastest div {
+  background-color: red;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .lastest {
+    grid-template-areas: 
+    "a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2"
+    "a3 a3 a3 a3 a3 a3 f1 f1 f1 f1 f1 f1"
+    "a4 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a5"
+    "a6 a6 a6 a6 a6 a6 a7 a7 a7 a7 a7 a7"
+    "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .landing {
+    grid-template-areas:
+      "H H H H H H"
+      "a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3";
+  }
+
+  .lastest {
+    grid-template-areas: 
+      "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3"
+      "f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1"
+      "a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5"
+      "a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6"
+      "a7 a7 a7 a7 a7 a7 a7 a7 a7 a7 a7 a7"
+      "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
+  }
 }
