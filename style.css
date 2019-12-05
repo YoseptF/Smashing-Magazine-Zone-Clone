@@ -9,16 +9,53 @@
 .landing {
   display: grid;
   background: red;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "H H H H H H"
+    "a1 a1 a2 a2 a3 a3";
+}
+
+@media only screen and (max-width: 1800px) {
+  .landing {
+    grid-template-areas:
+      "H H H H H H"
+      "a1 a1 a1 a2 a2 a2"
+      "a3 a3 a3 . . .";
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .landing {
+    grid-template-areas:
+      "H H H H H H"
+      "a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3";
+  }
 }
 
 .landing nav {
   background-color: rgba(0, 0, 0, 0.5);
-  grid-column: 1 / span 3;
+  grid-area: H;
 }
 
 .landing article {
-  height: 200px;
-  background: rgba(0, 0, 200, 0.5);
-  grid-row-start: 2;
+  background-color: deepPink;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 500px;
+}
+
+#one {
+  grid-area: a1;
+}
+
+#two {
+  grid-area: a2;
+}
+
+#three {
+  grid-area: a3;
 }
