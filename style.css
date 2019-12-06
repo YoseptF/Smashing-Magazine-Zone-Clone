@@ -10,7 +10,7 @@
 
 .landing {
   display: grid;
-  background: red;
+  background:white;
   grid-template-rows: 200px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
@@ -34,6 +34,8 @@
 .dontMiss span {
   color: #eaeaea;
   background: #4a4a4a;
+  box-sizing: content-box;
+  padding: 10px 15px;
 }
 
 .landing nav ul {
@@ -72,6 +74,19 @@ footer ul li {
   color: #fff;
   border: 1px solid #fff;
   height: 500px;
+}
+
+.landing article div {
+  display: flex;
+  align-items: center;
+}
+
+.landing article span {
+  background: #b7b7b7;
+}
+
+.landing article h1 {
+  background: #888;
 }
 
 .callToAction {
@@ -128,15 +143,53 @@ footer ul li {
 
 .lastest article {
   background-color: #7c7c7c;
+  padding: 20px;
+}
+
+.lastest article * {
+  margin: 12px 0;
 }
 
 .lastest div {
+  padding: 20px;
   background-color: #383838;
+  text-align: center;
+}
+
+.lastest div > * {
+  margin: 15px 0;
+}
+
+.lastest div span {
+  padding: 10px 20px;
+  background:#464646;
+}
+
+.lastest div p,
+.lastest div h2 
+{
+  background: #7c7c7c;
 }
 
 .book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background: #4f4f4f;
-  height: 100vh;
+  padding: 0 10%;
+}
+
+.book > .inner {
+  margin: 15px 0;
+}
+
+.book > h2, .book > p {
+  background: #828282;
+}
+
+.book span {
+  background: #3e3e3e;
 }
 
 .personOfWeek {
@@ -144,13 +197,18 @@ footer ul li {
 }
 
 .personOfWeek figure {
-  width: 34%;
+  flex: none;
+}
+
+.personOfWeek figure img {
+  width: 250px;
 }
 
 .personOfWeek .description {
   background: #676767;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 .otherPeople {
@@ -163,15 +221,42 @@ footer ul li {
 }
 
 .person {
+  display: flex;
+  align-items: flex-start;
   height: 50vh;
   background: #989898;
   margin: 1px;
+  padding: 20px;
+}
+
+.person img {
+  flex: none;
+  margin-right: 20px;
 }
 
 .tableContent {
   width: 100vw;
-  height: 35vh;
   background: dimgrey;
+  display: flex;
+  padding: 0 20px;
+}
+
+.tableContent img {
+  flex: none;
+}
+
+.tableContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tableContent div span {
+  background: #424242;
+}
+
+.tableContent div > *:not(:nth-last-child(1)) {
+  background-color: #565656;
 }
 
 .guides {
