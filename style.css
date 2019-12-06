@@ -272,3 +272,17 @@
       "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5";
   }
 }
+
+body > p {
+  background-color: lightgray;
+  text-align: center;
+}
+
+footer {
+  background-color: red;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
