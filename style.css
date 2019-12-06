@@ -20,8 +20,20 @@
 }
 
 .landing nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #5b5b5b;
   grid-area: H;
+}
+
+.dontMiss {
+  position: absolute;
+  top: 221px;
+  width: 100%;
+  text-align: center;
+}
+
+.dontMiss span {
+  color: #eaeaea;
+  background: #4a4a4a;
 }
 
 .landing nav ul {
@@ -30,6 +42,10 @@
   align-items: center;
   height: 100%;
   list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
 }
 
 .landing nav ul li {
@@ -42,14 +58,16 @@
 
 .landing nav ul li.menu {
   height: 80%;
+  background: #444;
 }
 
 .landing nav ul li:not(.menu) {
   height: 20%;
+  background: #4c4c4c;
 }
 
 .landing article {
-  background-color: deepPink;
+  background-color: #636363;
   padding: 20px;
   color: #fff;
   border: 1px solid #fff;
@@ -58,7 +76,7 @@
 
 .callToAction {
   grid-area: ca;
-  background: blue;
+  background: #404040;
   height: 60vh;
 }
 
@@ -109,15 +127,15 @@
 }
 
 .lastest article {
-  background-color: #999;
+  background-color: #7c7c7c;
 }
 
 .lastest div {
-  background-color: red;
+  background-color: #383838;
 }
 
 .book {
-  background: lightblue;
+  background: #4f4f4f;
   height: 100vh;
 }
 
@@ -126,12 +144,11 @@
 }
 
 .personOfWeek figure {
-  width: 30%;
+  width: 34%;
 }
 
 .personOfWeek .description {
-  width: 69%;
-  background: orangered;
+  background: #676767;
   display: flex;
   align-items: center;
 }
@@ -147,14 +164,14 @@
 
 .person {
   height: 50vh;
-  background: pink;
+  background: #989898;
   margin: 1px;
 }
 
 .tableContent {
   width: 100vw;
   height: 35vh;
-  background: lightgreen;
+  background: dimgrey;
 }
 
 .guides {
@@ -167,12 +184,12 @@
 
 .guide {
   height: 100vh;
-  background: yellowgreen;
+  background: #989898;
   margin: 1px;
 }
 
 .newsletter {
-  background-color: red;
+  background-color: #757575;
   width: 100%;
   height: 100vh;
 }
@@ -279,10 +296,6 @@ body > p {
 }
 
 footer {
-  background-color: red;
+  background-color: #a5a5a5;
   text-align: center;
-}
-
-footer ul li {
-  display: inline-block;
 }
