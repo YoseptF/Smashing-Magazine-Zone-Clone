@@ -21,6 +21,10 @@ h5 {
   font-family: 'Signika', sans-serif;
 }
 
+p {
+  line-height: 2em;
+}
+
 .landing {
   display: grid;
   background: white;
@@ -61,8 +65,13 @@ h5 {
   list-style: none;
 }
 
+.landing article span {
+  background: #b7b7b7;
+}
+
 .menu span:nth-child(1) {
   font-family: 'Signika', sans-serif;
+  font-size: 24px;
 }
 
 .menu span:nth-child(2) {
@@ -70,8 +79,24 @@ h5 {
   font-style: italic;
 }
 
-footer ul li {
+footer ul:nth-of-type(1) li {
+  font-size: 24px;
   display: inline-block;
+  padding: 0 10px;
+  line-height: 2em;
+}
+
+.callToAction ul {
+  padding-left: 20px;
+}
+
+.guide ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  padding-left: 50px;
+  font-size: 24px;
 }
 
 .landing nav ul li {
@@ -100,17 +125,21 @@ footer ul li {
   height: 500px;
 }
 
+.lastest div {
+  padding: 50px 20px;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+}
+
 .landing article div {
   display: flex;
   align-items: center;
 }
 
-.landing article span {
-  background: #b7b7b7;
-}
-
 .landing article h1 {
   background: #888;
+  font-size: 40px;
 }
 
 .callToAction {
@@ -120,10 +149,6 @@ footer ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.callToAction ul {
-  padding-left: 20px;
 }
 
 .callToAction div * {
@@ -136,14 +161,6 @@ footer ul li {
 
 .guide h2 {
   background: #838383;
-}
-
-.guide ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 50%;
-  padding-left: 50px;
 }
 
 .one {
@@ -183,8 +200,9 @@ footer ul li {
 }
 
 .lastest {
+  background-color: #383838;
   display: grid;
-  grid-auto-rows: 600px;
+  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
     "a1 a1 a1 a2 a2 a2 a3 a3 a3 .  .  ."
@@ -201,19 +219,33 @@ footer ul li {
   margin: 12px 0;
 }
 
-.lastest div {
-  padding: 20px;
-  background-color: #383838;
-  text-align: center;
+.lastest article h2 {
+  font-size: 34px;
 }
 
-.lastest div>* {
+.lastest article p {
+  font-size: 24px;
+}
+
+.lastest div > * {
   margin: 15px 0;
 }
 
 .lastest div span {
   padding: 10px 20px;
   background: #464646;
+  font-size: 24px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+}
+
+.lastest div h2 {
+  font-size: 40px;
+}
+
+.lastest div p {
+  margin: 25px 0;
+  font-size: 24px;
 }
 
 .lastest div p,
@@ -227,20 +259,32 @@ footer ul li {
   justify-content: space-around;
   align-items: center;
   background: #4f4f4f;
-  padding: 0 10%;
+  padding: 70px 10%;
 }
 
-.book>.inner {
+.book > .inner {
   margin: 15px 0;
 }
 
-.book>h2,
-.book>p {
+.book h2 {
+  font-size: 50px;
+}
+
+.book p {
+  font-size: 24px;
+}
+
+.book > h2,
+.book > p {
   background: #828282;
 }
 
 .book span {
   background: #3e3e3e;
+  padding: 10px 5px;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
 }
 
 .personOfWeek {
@@ -260,6 +304,7 @@ footer ul li {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  font-size: 18px;
 }
 
 .otherPeople {
@@ -285,6 +330,10 @@ footer ul li {
   margin-right: 20px;
 }
 
+.person p {
+  font-size: 16px;
+}
+
 .tableContent {
   width: 100vw;
   background: dimgrey;
@@ -304,10 +353,26 @@ footer ul li {
 
 .tableContent div span {
   background: #424242;
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 24px;
 }
 
-.tableContent div>*:not(:nth-last-child(1)) {
+.tableContent div > *:not(:nth-last-child(1)) {
   background-color: #565656;
+}
+
+.tableContent h3 {
+  font-family: 'Lora', serif;
+  letter-spacing: 3px;
+}
+
+.tableContent h2 {
+  font-size: 40px;
+}
+
+.tableContent p {
+  font-size: 18px;
 }
 
 .guides {
@@ -322,6 +387,10 @@ footer ul li {
   height: 100vh;
   background: #989898;
   margin: 1px;
+}
+
+.guide h2 {
+  font-size: 30px;
 }
 
 .newsletter {
@@ -339,8 +408,35 @@ footer ul li {
   flex-direction: column;
 }
 
+.newsletter h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.newsletter p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.newsletter span:nth-last-child(2) {
+  background: #575757;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+}
+
+.newsletter span:nth-last-child(1) {
+  background: #9b9b9b;
+  padding: 10px 20px;
+}
+
 .landing .four {
   display: none;
+}
+
+.more {
+  margin: 50px 0;
 }
 
 /* Media Qeries START */
@@ -452,5 +548,22 @@ body > p {
 footer {
   background-color: #a5a5a5;
   text-align: center;
-  padding: 150px 0;
+  padding: 120px 0;
+}
+
+footer h3 {
+  letter-spacing: 2px;
+  padding: 15px 0;
+}
+
+footer p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+footer ul:nth-of-type(2) li {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 2em;
 }
