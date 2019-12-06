@@ -1,3 +1,5 @@
+/* cyrillic-ext */
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5,12 +7,23 @@
   margin: 0;
   padding: 0;
   color: white;
+}
+
+body {
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Signika', sans-serif;
 }
 
 .landing {
   display: grid;
-  background:white;
+  background: white;
   grid-template-rows: 200px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
@@ -29,13 +42,15 @@
   top: 221px;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
-.dontMiss span {
+.dontMiss h2 {
   color: #eaeaea;
   background: #4a4a4a;
   box-sizing: content-box;
   padding: 10px 15px;
+  display: inline;
 }
 
 .landing nav ul {
@@ -44,6 +59,15 @@
   align-items: center;
   height: 100%;
   list-style: none;
+}
+
+.menu span:nth-child(1) {
+  font-family: 'Signika', sans-serif;
+}
+
+.menu span:nth-child(2) {
+  font-family: 'Lora', serif;
+  font-style: italic;
 }
 
 footer ul li {
@@ -70,7 +94,7 @@ footer ul li {
 
 .landing article {
   background-color: #636363;
-  padding: 20px;
+  padding: 50px;
   color: #fff;
   border: 1px solid #fff;
   height: 500px;
@@ -93,6 +117,33 @@ footer ul li {
   grid-area: ca;
   background: #404040;
   height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.callToAction ul {
+  padding-left: 20px;
+}
+
+.callToAction div * {
+  background: #646464;
+}
+
+.guide {
+  padding: 50px;
+}
+
+.guide h2 {
+  background: #838383;
+}
+
+.guide ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  padding-left: 50px;
 }
 
 .one {
@@ -156,18 +207,17 @@ footer ul li {
   text-align: center;
 }
 
-.lastest div > * {
+.lastest div>* {
   margin: 15px 0;
 }
 
 .lastest div span {
   padding: 10px 20px;
-  background:#464646;
+  background: #464646;
 }
 
 .lastest div p,
-.lastest div h2 
-{
+.lastest div h2 {
   background: #7c7c7c;
 }
 
@@ -180,11 +230,12 @@ footer ul li {
   padding: 0 10%;
 }
 
-.book > .inner {
+.book>.inner {
   margin: 15px 0;
 }
 
-.book > h2, .book > p {
+.book>h2,
+.book>p {
   background: #828282;
 }
 
@@ -255,7 +306,7 @@ footer ul li {
   background: #424242;
 }
 
-.tableContent div > *:not(:nth-last-child(1)) {
+.tableContent div>*:not(:nth-last-child(1)) {
   background-color: #565656;
 }
 
@@ -276,7 +327,20 @@ footer ul li {
 .newsletter {
   background-color: #757575;
   width: 100%;
-  height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.newsletter div {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing .four {
+  display: none;
 }
 
 /* Media Qeries START */
@@ -286,8 +350,12 @@ footer ul li {
     grid-template-areas:
       "H H H H H H"
       "a1 a1 a1 a2 a2 a2"
-      "a3 a3 a3 . . ."
+      "a3 a3 a3 a4 a4 a4"
       "ca ca ca ca ca ca";
+  }
+
+  .landing .four {
+    display: block;
   }
 
   .lastest {
@@ -330,6 +398,7 @@ footer ul li {
       "a1 a1 a1 a1 a1 a1"
       "a2 a2 a2 a2 a2 a2"
       "a3 a3 a3 a3 a3 a3"
+      "a4 a4 a4 a4 a4 a4"
       "ca ca ca ca ca ca";
   }
 
@@ -383,4 +452,5 @@ body > p {
 footer {
   background-color: #a5a5a5;
   text-align: center;
+  padding: 150px 0;
 }
