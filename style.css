@@ -36,6 +36,13 @@ p {
     "ca ca ca ca ca ca";
 }
 
+.callToAction span {
+  display: inline-block;
+  margin: 50px 0;
+  padding: 15px;
+  font-family: 'Signika', sans-serif;
+}
+
 .navWrapper {
   display: flex;
   grid-area: H;
@@ -53,6 +60,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.book span {
+  background: #3e3e3e;
+  padding: 10px 5px;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
 }
 
 .navWrapper div span {
@@ -97,21 +112,6 @@ p {
   align-items: center;
   height: 100%;
   list-style: none;
-}
-
-.callToAction span {
-  display: inline-block;
-  margin: 50px 0;
-  padding: 15px;
-  font-family: 'Signika', sans-serif;
-}
-
-.book span {
-  background: #3e3e3e;
-  padding: 10px 5px;
-  font-size: 30px;
-  font-family: 'Signika', sans-serif;
-  font-weight: 700;
 }
 
 .landing article span {
