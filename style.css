@@ -36,9 +36,30 @@ p {
     "ca ca ca ca ca ca";
 }
 
+.navWrapper {
+  display: flex;
+  grid-area: H;
+}
+
 .landing nav {
   background-color: #5b5b5b;
-  grid-area: H;
+  width: 80%;
+}
+
+.logo,
+.topic {
+  width: 10%;
+  background-color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navWrapper div span {
+  background: #7d7d7d;
+  padding: 15px 20px;
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
 }
 
 .dontMiss {
@@ -112,12 +133,12 @@ p {
   font-size: 24px;
 }
 
-.menu span:nth-child(1) {
+.menu span:nth-child(2) {
   font-family: 'Signika', sans-serif;
   font-size: 24px;
 }
 
-.menu span:nth-child(2) {
+.menu span:nth-child(3) {
   font-family: 'Lora', serif;
   font-style: italic;
 }
@@ -135,6 +156,7 @@ footer ul:nth-of-type(1) li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .landing nav ul li.menu {
@@ -205,6 +227,10 @@ footer ul:nth-of-type(2) li {
 body > p {
   background-color: lightgray;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 footer p {
@@ -465,6 +491,10 @@ footer h3 {
 
 .more {
   margin: 50px 0;
+}
+
+.nonShown {
+  display: none;
 }
 
 /* Media Qeries START */
