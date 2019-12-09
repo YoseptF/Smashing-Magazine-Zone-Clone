@@ -24,7 +24,7 @@
 - VSCode
 
 ## Live Demo
-You can check the live version here:
+You can check the live version here: https://yoseptf.github.io/Smashing-Magazine-Zone-Clone/
 
 ## Authors
 
