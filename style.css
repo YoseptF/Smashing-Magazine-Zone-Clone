@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Signika:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Signika', sans-serif;
+}
+
+p {
+  line-height: 2em;
+}
+
+.landing {
+  display: grid;
+  background: white;
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "H H H H H H"
+    "a1 a1 a2 a2 a3 a3"
+    "ca ca ca ca ca ca";
+}
+
+.callToAction span {
+  display: inline-block;
+  margin: 50px 0;
+  padding: 15px;
+  font-family: 'Signika', sans-serif;
+}
+
+.navWrapper {
+  display: flex;
+  grid-area: H;
+}
+
+.landing nav {
+  background-color: #5b5b5b;
+  width: 80%;
+}
+
+.logo,
+.topic {
+  width: 10%;
+  background-color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book span {
+  background: #3e3e3e;
+  padding: 10px 5px;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+}
+
+.navWrapper div span {
+  background: #7d7d7d;
+  padding: 15px 20px;
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+}
+
+.dontMiss {
+  position: absolute;
+  top: 221px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.dontMiss h2 {
+  color: #eaeaea;
+  background: #4a4a4a;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  display: inline;
+}
+
+.guide ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  padding-left: 50px;
+  font-size: 24px;
+}
+
+.callToAction ul {
+  padding-left: 20px;
+}
+
+.landing nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.landing article span {
+  background: #b7b7b7;
+}
+
+.lastest div span {
+  padding: 10px 20px;
+  background: #464646;
+  font-size: 24px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+}
+
+.tableContent div span {
+  background: #424242;
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+.menu span:nth-child(2) {
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+}
+
+.menu span:nth-child(3) {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+footer ul:nth-of-type(1) li {
+  font-size: 24px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 2em;
+}
+
+.landing nav ul li {
+  width: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.landing nav ul li.menu {
+  height: 80%;
+  background: #444;
+}
+
+footer ul:nth-of-type(2) li {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 2em;
+}
+
+.landing nav ul li:not(.menu) {
+  height: 20%;
+  background: #4c4c4c;
+}
+
+.landing article {
+  background-color: #636363;
+  padding: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 500px;
+}
+
+.lastest div {
+  padding: 50px 20px;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.tableContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.newsletter div {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.landing article div {
+  display: flex;
+  align-items: center;
+}
+
+.guide h2 {
+  background: #838383;
+  font-size: 30px;
+}
+
+.book h2 {
+  font-size: 50px;
+}
+
+body > p {
+  background-color: lightgray;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.book > h2,
+.book > p {
+  background: #828282;
+}
+
+.tableContent h2 {
+  font-size: 40px;
+}
+
+.landing article h2 {
+  background: #888;
+  font-size: 40px;
+}
+
+.callToAction {
+  grid-area: ca;
+  background: #404040;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.callToAction * {
+  font-size: 24px;
+}
+
+.callToAction div * {
+  background: #646464;
+}
+
+.guide {
+  padding: 50px;
+  height: 100vh;
+  background: #989898;
+  margin: 1px;
+}
+
+.one {
+  grid-area: a1;
+}
+
+.two {
+  grid-area: a2;
+}
+
+.three {
+  grid-area: a3;
+}
+
+.four {
+  grid-area: a4;
+}
+
+.five {
+  grid-area: a5;
+}
+
+.six {
+  grid-area: a6;
+}
+
+.seven {
+  grid-area: a7;
+}
+
+.fone {
+  grid-area: f1;
+}
+
+.ftwo {
+  grid-area: f2;
+}
+
+.lastest {
+  background-color: #383838;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "a1 a1 a1 a2 a2 a2 a3 a3 a3 .  .  ."
+    "f1 f1 f1 f1 f1 f1 a4 a4 a4 a5 a5 a5"
+    "a6 a6 a6 a7 a7 a7 f2 f2 f2 f2 f2 f2";
+}
+
+.lastest article {
+  background-color: #7c7c7c;
+  padding: 20px;
+}
+
+.lastest article * {
+  margin: 12px 0;
+}
+
+.lastest article h2 {
+  font-size: 34px;
+}
+
+.book p {
+  font-size: 24px;
+}
+
+.person p {
+  font-size: 16px;
+}
+
+.tableContent p {
+  font-size: 18px;
+}
+
+.newsletter p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.lastest article p {
+  font-size: 24px;
+}
+
+.lastest div > * {
+  margin: 15px 0;
+}
+
+.lastest div h2 {
+  font-size: 40px;
+}
+
+.lastest div p {
+  margin: 25px 0;
+  font-size: 24px;
+}
+
+.lastest div p,
+.lastest div h2 {
+  background: #7c7c7c;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #4f4f4f;
+  padding: 70px 10%;
+}
+
+.book > .inner {
+  margin: 15px 0;
+}
+
+.personOfWeek {
+  display: flex;
+}
+
+.personOfWeek figure {
+  flex: none;
+}
+
+.person img {
+  flex: none;
+  margin-right: 20px;
+}
+
+.tableContent img {
+  flex: none;
+}
+
+.personOfWeek figure img {
+  width: 250px;
+}
+
+.personOfWeek .description {
+  background: #676767;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.otherPeople {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a1 a2"
+    "a3 a4"
+    "a5 a6";
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
+  height: 50vh;
+  background: #989898;
+  margin: 1px;
+  padding: 20px;
+}
+
+.tableContent {
+  width: 100vw;
+  background: dimgrey;
+  display: flex;
+  padding: 0 20px;
+}
+
+.tableContent div > *:not(:nth-last-child(1)) {
+  background-color: #565656;
+}
+
+footer h3 {
+  letter-spacing: 2px;
+  padding: 15px 0;
+}
+
+.tableContent h3 {
+  font-family: 'Lora', serif;
+  letter-spacing: 3px;
+}
+
+.guides {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "a1 a1 a1 a2 a2 a2 a3 a3 a3 a4 a4 a4"
+    "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5";
+}
+
+.newsletter {
+  background-color: #757575;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.newsletter span:nth-last-child(2) {
+  background: #575757;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+}
+
+.newsletter span:nth-last-child(1) {
+  background: #9b9b9b;
+  padding: 10px 20px;
+}
+
+.landing .four {
+  display: none;
+}
+
+.more {
+  margin: 50px 0;
+}
+
+.nonShown {
+  display: none;
+}
+
+/* Media Qeries START */
+
+@media only screen and (max-width: 1800px) {
+  .landing {
+    grid-template-areas:
+      "H H H H H H"
+      "a1 a1 a1 a2 a2 a2"
+      "a3 a3 a3 a4 a4 a4"
+      "ca ca ca ca ca ca";
+  }
+
+  .landing .four {
+    display: block;
+  }
+
+  .lastest {
+    grid-template-areas:
+      "a1 a1 a1 a1 a2 a2 a2 a2 a3 a3 a3 a3"
+      "f1 f1 f1 f1 f1 f1 f1 f1 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a6 a6 a6 a6 a7 a7 a7 a7"
+      "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
+  }
+
+  .guides {
+    grid-template-areas:
+      "a1 a1 a1 a1 a2 a2 a2 a2 a3 a3 a3 a3"
+      "a4 a4 a4 a4 a5 a5 a5 a5 a5 a5 a5 a5";
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .lastest {
+    grid-template-areas:
+      "a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3 f1 f1 f1 f1 f1 f1"
+      "a4 a4 a4 a4 a4 a4 a5 a5 a5 a5 a5 a5"
+      "a6 a6 a6 a6 a6 a6 a7 a7 a7 a7 a7 a7"
+      "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
+  }
+
+  .guides {
+    grid-template-areas:
+      "a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3 a4 a4 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5";
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .landing {
+    grid-template-areas:
+      "H H H H H H"
+      "a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3"
+      "a4 a4 a4 a4 a4 a4"
+      "ca ca ca ca ca ca";
+  }
+
+  .lastest {
+    grid-template-areas:
+      "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3"
+      "f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1"
+      "a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5"
+      "a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6 a6"
+      "a7 a7 a7 a7 a7 a7 a7 a7 a7 a7 a7 a7"
+      "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2 f2";
+  }
+
+  .otherPeople {
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5"
+      "a6";
+  }
+
+  .personOfWeek {
+    flex-direction: column;
+  }
+
+  .personOfWeek .description {
+    width: 100%;
+    padding: 20% 0;
+  }
+
+  .guides {
+    grid-template-areas:
+      "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+      "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+      "a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3 a3"
+      "a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4 a4"
+      "a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5 a5";
+  }
+}
+
+footer {
+  background-color: #a5a5a5;
+  text-align: center;
+  padding: 120px 0;
+}
